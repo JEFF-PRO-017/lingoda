@@ -1,0 +1,20 @@
+// @import '../../../styles.scss';
+
+
+$color1: #6f42c1;
+
+.b1 {
+     background-color: rgb($color1, 0.5);
+}
+
+.b2 {
+    border: 1px solid #eee;
+    background-color: #fafafa;
+    transition: all 0.2s ease-in-out;
+  }
+  .b2:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+  }
+
+//   @import '../../../styles.scss';

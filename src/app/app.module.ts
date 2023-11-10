@@ -17,30 +17,32 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { Page404Component } from './pages/page404/page404.component';
 import { NoItemsComponent } from './components/no-items/no-items.component';
+import { TimelineModule } from 'primeng/timeline';
+import { CardModule } from 'primeng/card';
+import { CarouselModule } from 'primeng/carousel';
+import { TagModule } from 'primeng/tag';
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    MainCallActionComponent,
-    SecondCallActionComponent,
-    MainCarouselComponent,
-    MainSubjectsComponent,
-    MainTeachersComponent,
-    HeaderComponent,
-    FooterComponent,
-    HomeComponent,
-    TeachersComponent,
-    SubjectsComponent,
-    LoginComponent,
-    RegisterComponent,
-    Page404Component,
-    NoItemsComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+     declarations: [
+          AppComponent,
+          MainCallActionComponent,
+          SecondCallActionComponent,
+          MainCarouselComponent,
+          MainSubjectsComponent,
+          MainTeachersComponent,
+          HeaderComponent,
+          FooterComponent,
+          HomeComponent,
+          TeachersComponent,
+          SubjectsComponent,
+          LoginComponent,
+          RegisterComponent,
+          Page404Component,
+          NoItemsComponent,
+     ],
+     imports: [BrowserModule, AppRoutingModule, TimelineModule, CardModule, CarouselModule, TagModule, ButtonModule],
+     providers: [],
+     bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
