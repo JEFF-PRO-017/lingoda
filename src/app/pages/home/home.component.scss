@@ -1,6 +1,5 @@
 // @import '../../../styles.scss';
 
-
 $color1: #6f42c1;
 
 .b1 {
@@ -8,13 +7,34 @@ $color1: #6f42c1;
 }
 
 .b2 {
-    border: 1px solid #eee;
-    background-color: #fafafa;
-    transition: all 0.2s ease-in-out;
-  }
-  .b2:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
-  }
+     border: 1px solid #eee;
+     background-color: #fafafa;
+     transition: all 0.5s ease-in-out;
+}
+.b2:hover {
+     transform: translateY(-2px);
+     box-shadow: 0px 4px 10px rgba($color1, 0.35);
+}
 
 //   @import '../../../styles.scss';
+
+.bg-reasons-learn {
+     background-image: url('../../../assets/img/course-4.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+     background-position: center center;
+     float: left;
+     padding: 100px 0;
+     width: 100%;
+     position: relative;
+     &:before {
+          background-color: rgba($color1, 0.8);
+          bottom: 0;
+          content: '';
+          left: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+     }
+}
