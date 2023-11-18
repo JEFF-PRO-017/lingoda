@@ -22,6 +22,9 @@ import { CardModule } from 'primeng/card';
 import { CarouselModule } from 'primeng/carousel';
 import { TagModule } from 'primeng/tag';
 import { ButtonModule } from 'primeng/button';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { RatingModule } from 'primeng/rating';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
      declarations: [
@@ -41,7 +44,18 @@ import { ButtonModule } from 'primeng/button';
           Page404Component,
           NoItemsComponent,
      ],
-     imports: [BrowserModule, AppRoutingModule, TimelineModule, CardModule, CarouselModule, TagModule, ButtonModule],
+     imports: [
+          BrowserModule,
+          AppRoutingModule,
+          TimelineModule,
+          CardModule,
+          CarouselModule,
+          TagModule,
+          ButtonModule,
+          SlickCarouselModule,
+          RatingModule,
+          FormsModule
+     ],
      providers: [],
      bootstrap: [AppComponent],
 })

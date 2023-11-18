@@ -5,12 +5,14 @@ import { EventItem } from '../models/iEventIten-interfaces';
      selector: 'app-home',
      templateUrl: './home.component.html',
      styleUrls: ['./home.component.scss'],
+  
 })
 export class HomeComponent implements OnInit {
      events!: EventItem[];
 
      responsiveOptions: any[] | undefined;
      products: any[]=[1,1,1,1,1]
+value:number =3;
 
      constructor() {}
      ngOnInit() {
@@ -39,14 +41,11 @@ export class HomeComponent implements OnInit {
           ];
      }
 
-    //  getSeverity(status: string) {
-    //       switch (status) {
-    //            case 'INSTOCK':
-    //                 return 'success';
-    //            case 'LOWSTOCK':
-    //                 return 'warning';
-    //            case 'OUTOFSTOCK':
-    //                 return 'danger';
-    //       }
-    //  }
+     
+     // countries = [
+     //      { name: 'Country 1', flag: 'assets/img/team-1.jpg' },
+     //      { name: 'Country 2', flag: 'assets/img/team-1.jpg' },
+     //      { name: 'Country 3', flag: 'flag3.jpg' },
+     //      // Add more countries as needed
+     //    ];
 }

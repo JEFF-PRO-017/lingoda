@@ -3,15 +3,19 @@
 @import '../node_modules/bootstrap/scss/functions';
 @import '../node_modules/bootstrap/scss/variables';
 @import "primeicons/primeicons.css";
+@import '../src/assets/theme/color.scss';
+
 //$body-bg: #000;
 //$body-color: #111;
 
-$color1: #000;
-$color2: #ffffff;
-$color3: #6f42c1;
+
+$color1:$color1;
+$color2:$color2;
+$color3:$color3;
+
 
 .bd {
-     border: solid 2px blue !important;
+    border: solid 2px blue !important;
 }
 
 $blue: #226bac;

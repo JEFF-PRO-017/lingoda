@@ -1,1 +1,14 @@
-<p>main-carousel works!</p>
+<div class="bg p-2">
+     <div class="carousel-container p-2">
+          <div class="carousel">
+               <div class="slide bg-secondary d-flex rounded-4" *ngFor="let country of countries">
+                    <span class="d-flex">
+                         <img [src]="country.flag" class="rounded-4" alt="{{ country.name }} Flag" />
+                         <span class="ms-2 fs-3">{{ country.name | uppercase }}</span>
+                    </span>
+               </div>
+          </div>
+     </div>
+</div>
+
+
