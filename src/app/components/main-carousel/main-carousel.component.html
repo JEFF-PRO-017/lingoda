@@ -1,7 +1,7 @@
 <div class="bg p-2">
      <div class="carousel-container p-2">
           <div class="carousel">
-               <div class="slide bg-secondary d-flex rounded-4" *ngFor="let country of countries">
+               <div class="slide bg-light d-flex rounded-4" type="button" *ngFor="let country of countries" style="background-color: #f1f1f1;">
                     <span class="d-flex">
                          <img [src]="country.flag" class="rounded-4" alt="{{ country.name }} Flag" />
                          <span class="ms-2 fs-3">{{ country.name | uppercase }}</span>

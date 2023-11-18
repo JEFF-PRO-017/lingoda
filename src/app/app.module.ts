@@ -27,6 +27,7 @@ import { RatingModule } from 'primeng/rating';
 import { FormsModule } from '@angular/forms';
 import { DetailTeacherComponent } from './pages/detail-teacher/detail-teacher.component';
 import { AgendaComponent } from './components/agenda/agenda.component';
+import { AllTeacherComponent } from './pages/all-teacher/all-teacher.component';
 
 @NgModule({
      declarations: [
@@ -47,6 +48,7 @@ import { AgendaComponent } from './components/agenda/agenda.component';
           NoItemsComponent,
           DetailTeacherComponent,
           AgendaComponent,
+          AllTeacherComponent,
      ],
      imports: [
           BrowserModule,
