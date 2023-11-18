@@ -85,7 +85,7 @@
 
           <div class="col-lg-4 col-sm-12 col-md-12 p-2">
                <div class="card border-0 b2 rounded-5">
-                    <img src="assets/img/team-3.jpg" class="card-img-top rounded-5" alt="..." />
+                    <img src="assets/img/team-4.jpg" class="card-img-top rounded-5" alt="..." />
                     <div class="card-body">
                          <h5 class="card-title">Group lessons</h5>
                          <p class="card-text">Fun and engaging online group classes designed and led by expert teachers</p>
@@ -101,34 +101,34 @@
 <!-- service end -->
 
 <!-- What is Langoli? -->
-
-<div class="mb-5 d-flex align-items-center">
+<div class="container"><div class="mb-5 d-flex align-items-center">
      <div class="mb-3 mt-5">
           <div class="row g-0">
                <div class="col-lg-5">
                     <img src="assets/img/cat-4.jpg" class="img-fluid w-100" alt="..." />
                </div>
-               <div class="col-lg-7 bd d-flex justify-content-centr bd align-items-center">
+               <div class="col-lg-7 ">
                     <div class="card-body p-5">
                          <h2 class="card-title p-1 text-primary fw-semibold">What is Langoli?</h2>
                          <p class="card-text">
                               An online platform that offers a complete range of
-                              <span class="fw-semibold">personalized courses</span>
+                              <code class="fw-semibold">personalized courses</code>
                               , accessible
-                              <span class="fw-semibold">live and online</span>
+                              <code class="fw-semibold">live and online</code>
                               . Whether you prefer dynamic group lessons or more targeted private lessons, our platform
-                              <span class="fw-semibold">adapts to your needs</span>
+                              <code class="fw-semibold">adapts to your needs</code>
                               . Regardless of your current level, whether you are a beginner looking for solid foundations or advanced looking for
                               more complex challenges, our courses are designed to support you in your progress.
                          </p>
                     </div>
                     <div class="p-5">
-                         <a href="" class="btn btn-outline-primary py-md-3 px-md-5">Get Started</a>
+                         <a href="" class="btn btn-outline-primary ">Get Started</a>
                     </div>
                </div>
           </div>
      </div>
-</div>
+</div></div>
+
 
 <!-- Top Rated English Teachers -->
 <div class="container mb-5 d-flex align-items-center flex-column">
@@ -137,7 +137,7 @@
           <p>Some of our top-rated English teachers</p>
      </div>
      <div class="row">
-          <div class="p-1 col-sm-12 col-lg-3 col-md-6" *ngFor="let teach of [1,1,1,1]">
+          <div class="p-1 col-sm-12 col-lg-3 col-md-6" *ngFor="let teach of [1, 1, 1, 1]">
                <div class="card b2">
                     <img src="assets/img/team-1.jpg" class="card-img-top" alt="..." />
                     <div class="card-body">
@@ -154,7 +154,7 @@
                          <li class="list-group-item">Location:YAOUNDE I teach:Private lessons</li>
                     </ul>
                     <div class="card-body">
-                         <button class="btn btn-outline-primary">View Details</button>
+                         <a class="btn btn-outline-primary" routerLink="/detail-teacher">View Details</a>
                     </div>
                </div>
           </div>
@@ -171,9 +171,9 @@
           <h1 class="text-primary fw-semibold">Top rated French teachers</h1>
           <p>Some of our top-rated French teachers</p>
      </div>
-  
+
      <div class="row">
-          <div class="p-1 col-sm-12 col-lg-3 col-md-6" *ngFor="let teach of [1,1,1,1]">
+          <div class="p-1 col-sm-12 col-lg-3 col-md-6" *ngFor="let teach of [1, 1, 1, 1]">
                <div class="card b2">
                     <img src="assets/img/team-4.jpg" class="card-img-top" alt="..." />
                     <div class="card-body">
@@ -190,7 +190,7 @@
                          <li class="list-group-item">Location:YAOUNDE I teach:Private lessons</li>
                     </ul>
                     <div class="card-body">
-                         <button class="btn btn-outline-primary">View Details</button>
+                         <a class="btn btn-outline-primary" routerLink="/detail-teacher">View Details</a>
                     </div>
                </div>
           </div>
@@ -204,13 +204,16 @@
 <!-- Reasons to learn about Langoli -->
 <div class="bg-reasons-learn">
      <div class="container mb-5">
-          <div class="bd"></div>
-          <div class="text-center w-100 p-3 mb-4 text-secondary position-absolute top-0 start-50 translate-middle-x mt-3">
-               <h1 class="fw-semibold">Reasons to learn about Langoli</h1>
+          <!-- <div class="bd"></div> -->
+          <div class=" d-flex justify-content-center w-100 p-3 mb-4 text-secondary position-absolute bd top-0 start-50 translate-middle-x mt-3">
+               <div class="col-sm-12 col-md-6 text-center col-lg-8 bd ">
+                  <h1 class="fw-semibold">Reasons to learn about Langoli</h1>
                <p>
                     Langoli has many advantages, such as the flexibility to study at your own pace, easy access to courses from any internet-connected
                     device, and the ability to choose from a wide range of learning programs to develop your skills. skills and knowledges
-               </p>
+               </p>    
+               </div>
+             
           </div>
 
           <div class="" style="margin-top: 200px">

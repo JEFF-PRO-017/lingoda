@@ -5,14 +5,13 @@ import { EventItem } from '../models/iEventIten-interfaces';
      selector: 'app-home',
      templateUrl: './home.component.html',
      styleUrls: ['./home.component.scss'],
-  
 })
 export class HomeComponent implements OnInit {
      events!: EventItem[];
 
      responsiveOptions: any[] | undefined;
-     products: any[]=[1,1,1,1,1]
-value:number =3;
+     products: any[] = [1, 1, 1, 1, 1];
+     value: number = 3;
 
      constructor() {}
      ngOnInit() {
@@ -41,7 +40,6 @@ value:number =3;
           ];
      }
 
-     
      // countries = [
      //      { name: 'Country 1', flag: 'assets/img/team-1.jpg' },
      //      { name: 'Country 2', flag: 'assets/img/team-1.jpg' },

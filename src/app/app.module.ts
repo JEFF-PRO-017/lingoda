@@ -25,6 +25,8 @@ import { ButtonModule } from 'primeng/button';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { RatingModule } from 'primeng/rating';
 import { FormsModule } from '@angular/forms';
+import { DetailTeacherComponent } from './pages/detail-teacher/detail-teacher.component';
+import { AgendaComponent } from './components/agenda/agenda.component';
 
 @NgModule({
      declarations: [
@@ -43,6 +45,8 @@ import { FormsModule } from '@angular/forms';
           RegisterComponent,
           Page404Component,
           NoItemsComponent,
+          DetailTeacherComponent,
+          AgendaComponent,
      ],
      imports: [
           BrowserModule,
