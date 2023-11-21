@@ -28,6 +28,7 @@ import { FormsModule } from '@angular/forms';
 import { DetailTeacherComponent } from './pages/detail-teacher/detail-teacher.component';
 import { AgendaComponent } from './components/agenda/agenda.component';
 import { AllTeacherComponent } from './pages/all-teacher/all-teacher.component';
+import { ItemTeachersComponent } from './components/item-teachers/item-teachers.component';
 
 @NgModule({
      declarations: [
@@ -49,6 +50,7 @@ import { AllTeacherComponent } from './pages/all-teacher/all-teacher.component';
           DetailTeacherComponent,
           AgendaComponent,
           AllTeacherComponent,
+          ItemTeachersComponent,
      ],
      imports: [
           BrowserModule,

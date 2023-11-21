@@ -1,0 +1,102 @@
+<div id="item-teacher" class="row m-0">
+     <div class="col-md-8 col-sm-12 p-1 bd">
+          <div class="card mb-3">
+               <div class="row g-0">
+                    <div class="col-md-2 bd">
+                         <div class="position-relative  w-100" >
+                              <img src="assets/img/team-1.jpg" class="img-fluid " alt="..." />
+
+                              <div
+                                   class="position-absolute rounded-2 "
+                                   style="width: 25px; height: 25px ; bottom: 10px; right: 10px;"
+                                   [ngClass]="{ 'bg-success': true, 'bg-body-secondary': false }"
+                              ></div>
+                         </div>
+                    </div>
+                    <div class="col-md-10">
+                         <div class="card-body">
+                              <div class="d-flex">
+                                   <div class="">
+                                        <p class="m-0 p-1 fw-semibold">José E.</p>
+                                        <p class="m-0">
+                                             <span class="p-1"><i class="fa-solid fa-graduation-cap" style="font-size: 0.5rem"></i></span>
+                                             <span class="p-1 text-small">Espagnol</span>
+                                        </p>
+                                        <p class="m-0">
+                                             <span class="p-1"><i class="pi pi-user" style="font-size: 0.5rem"></i></span>
+                                             <span class="p-1 text-small">1 élève actif</span>
+                                        </p>
+                                        <p class="m-0">
+                                             <span class="p-1"><i class="pi pi-language" style="font-size: 0.5rem"></i></span>
+                                             <span class="p-1 text-small">Parle : Espagnol (Natif), Anglais</span>
+                                        </p>
+                                   </div>
+                                   <div class="d-flex">
+                                        <div class="p-1">
+                                             <h5 class="fw-semibold">Nouveau</h5>
+                                             <p class="text-small">profil</p>
+                                        </div>
+                                        <div class="p-1">
+                                             <h5 class="fw-semibold">{{ 12027 | currency: 'XAF' }}</h5>
+                                             <p class="text-small">cours de 50 min</p>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="row m-0 p-0">
+                                   <div class="bd col-md-8 p-0">
+                                        <h5 class="card-title">
+                                             Développez vos compétences de conversation en espagnol avec moi dans mes cours dynamiques et motivants !
+                                        </h5>
+
+                                        <p class="card-text" [ngClass]="{ 'visually-hidden': ishidden }">
+                                             Salut! Je m'appelle José du Chili ! Voulez-vous améliorer votre espagnol pour le travail? Pour voyager?
+                                             Pour discuter avec des amis ? Ou pour le développement personnel ? Je suis le professeur pour vous ! Je
+                                             suis certifié pour enseigner l'espagnol et l'anglais comme langue seconde et j'ai 15 ans d'expérience
+                                             dans l'enseignement à tous les âges.
+                                        </p>
+                                        <a class="text-primary" type="button" *ngIf="ishidden" (click)="onIsHidden()">Voir Plus</a>
+                                        <a class="text-primary" type="button" *ngIf="!ishidden" (click)="onIsHidden()">Voir Moins</a>
+                                   </div>
+                                   <div class="bd col-md-4 p-0">
+                                        <div class="p-1 bd">
+                                             <button class="btn w-100 btn-success">Reserver un cours D'essai</button>
+                                        </div>
+                                        <div class="p-1 bd">
+                                             <button class="btn w-100 btn-outline-primary">Contacter</button>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <div class="col-4 bd d-none d-md-block p-1 visible-video">
+          <div class="video-container card p-1">
+               <video  class="rounded-2" controls (mouseenter)="showControls()" (mouseleave)="hideControls()" (ended)="showPlayButton()">
+                    <source
+                         src="assets/video/GUY MICHEL KINGUE - JESUS LE PLUS BEAU DES NOMS   OFFICIAL VIDEO Directed by ICE_ SKY STAR.mp4"
+                         type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+               </video>
+               <button *ngIf="showPlayBtn" class="play-button rounded-circle d-flex justify-content-center align-items-center" (click)="playVideo()">
+                    <i class="pi-play pi" style="font-size: 1rem"></i>
+               </button>
+               <button
+                    *ngIf="!showPlayBtn"
+                    id="pause-btn"
+                    class="play-button rounded-circle d-flex justify-content-center align-items-center"
+                    (click)="pauseVideo()"
+               >
+                    <i class="pi pi-pause" style="font-size: 1rem"></i>
+               </button>
+
+               <div class="mt-2">
+                    <button class="btn w-100 btn-outline-primary">Voir tout l'agenda</button>
+               </div>
+          </div>
+     </div>
+</div>
