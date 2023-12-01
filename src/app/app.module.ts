@@ -29,6 +29,10 @@ import { DetailTeacherComponent } from './pages/detail-teacher/detail-teacher.co
 import { AgendaComponent } from './components/agenda/agenda.component';
 import { AllTeacherComponent } from './pages/all-teacher/all-teacher.component';
 import { ItemTeachersComponent } from './components/item-teachers/item-teachers.component';
+import { ChartModule } from 'primeng/chart';
+import { ItemCvComponent } from './components/item-cv/item-cv.component';
+import { Agenda2Component } from './components/agenda2/agenda2.component';
+import { HeaderFilterComponent } from './components/header-filter/header-filter.component';
 
 @NgModule({
      declarations: [
@@ -51,6 +55,9 @@ import { ItemTeachersComponent } from './components/item-teachers/item-teachers.
           AgendaComponent,
           AllTeacherComponent,
           ItemTeachersComponent,
+          ItemCvComponent,
+          Agenda2Component,
+          HeaderFilterComponent,
      ],
      imports: [
           BrowserModule,
@@ -62,7 +69,7 @@ import { ItemTeachersComponent } from './components/item-teachers/item-teachers.
           ButtonModule,
           SlickCarouselModule,
           RatingModule,
-          FormsModule
+          FormsModule,ChartModule
      ],
      providers: [],
      bootstrap: [AppComponent],

@@ -1,43 +1,99 @@
-/* carousel.component.scss */
-@import '../../../assets/theme/color.scss';
+// /* carousel.component.scss */
+// @import '../../../assets/theme/color.scss';
 
-.carousel-container {
-    overflow: hidden;
-  }
-  
-  .carousel {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-  
-  .slide {
-    opacity: 0.75;
-    flex: 0 0 300px;
-    margin: 0 10px;
-    // padding: 20px;
-    text-align: center;
-    // background-color: #fff;
-    box-shadow: 0 4px 8px rgba($color2, 0.2);
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
-  }
-  
-  .slide:hover{
-    opacity: 9;
-  }
-  img {
-    max-width: 30%;
-    height: auto;
-  }
-  
-  p {
-    margin-top: 10px;
-    font-weight: bold;
-  }
-  
+// .carousel-container {
+//     overflow: hidden;
+//   }
 
-  .bg{
-    background-color: $color2;
-  }
+//   .carousel {
+//     display: flex;
+//     transition: transform 0.5s ease;
+//   }
 
+//   .slide {
+//     opacity: 0.75;
+//     flex: 0 0 300px;
+//     margin: 0 10px;
+//     // padding: 20px;
+//     text-align: center;
+//     // background-color: #fff;
+//     box-shadow: 0 4px 8px rgba($color2, 0.2);
+//     transition: transform 0.5s ease, box-shadow 0.5s ease;
+//   }
+
+//   .slide:hover{
+//     opacity: 9;
+//   }
+//   img {
+//     max-width: 30%;
+//     height: auto;
+//   }
+
+//   p {
+//     margin-top: 10px;
+//     font-weight: bold;
+//   }
+
+//   .bg{
+//     background-color: $color2;
+//   }
 
 
+
+@mixin white-gradient {
+     background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+$animationSpeed: 60s;
+
+// Animation
+@keyframes scroll {
+     0% {
+          transform: translateX(0);
+     }
+     100% {
+          transform: translateX(calc(-250px * 7));
+     }
+}
+
+// Styling
+.slider {
+     background: white;
+     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+     // height: 100px;
+     margin: auto;
+     overflow: hidden;
+     position: relative;
+    //  width: 960px;
+
+     &::before,
+     &::after {
+          @include white-gradient;
+          content: '';
+          // height: 100px;
+          position: absolute;
+          width: 200px;
+          z-index: 2;
+     }
+
+     &::after {
+          right: 0;
+          top: 0;
+          transform: rotateZ(180deg);
+     }
+
+     &::before {
+          left: 0;
+          top: 0;
+     }
+
+     .slide-track {
+          animation: scroll $animationSpeed linear infinite;
+          display: flex;
+          width: calc(250px * 14);
+        
+     }
+     .slide-track:hover {
+      animation-play-state: paused;
+    }
+}

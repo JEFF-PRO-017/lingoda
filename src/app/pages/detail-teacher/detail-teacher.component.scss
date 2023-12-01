@@ -22,3 +22,79 @@
      height: 100px;
      
 }
+.mg-p{
+     margin-top: 200px;
+}
+
+/* video-player.component.css */
+@import '../../../assets/theme/color.scss';
+
+.video-container {
+    //  position: relative;
+    //  width: 61.8vw; /* Largeur selon le nombre d'or */
+    //  max-width: 100%;
+    //  margin: 0 auto;
+    
+}
+
+video {
+     width: 100%;
+     height: auto;
+     display: block;
+     cursor: pointer;
+}
+
+.play-button {
+     width: 50px;
+     height: 50px;
+     position: absolute;
+     top: 25%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     background-color: $color1;
+     color: #fff;
+     border: none;
+     padding: 10px;
+     cursor: pointer;
+     z-index: 1;
+}
+
+.video-container:hover video {
+     cursor: pointer;
+}
+
+#pause-btn{
+    visibility: hidden !important;
+}
+
+.video-container:hover #pause-btn {
+     visibility: visible !important;
+
+}
+.visible-video{
+    visibility: hidden !important;
+}
+
+#item-teacher:hover .visible-video{
+     visibility: visible !important;
+
+}
+
+.video-container:hover video::-webkit-media-controls {
+     display: flex !important;
+     opacity: 1 !important;
+}
+
+.video-container:hover video::-webkit-media-controls-enclosure {
+     display: flex !important;
+     opacity: 1 !important;
+}
+
+.video-container:hover video::-webkit-media-controls-panel {
+     display: flex !important;
+     opacity: 1 !important;
+}
+
+.video-container:hover video::-webkit-media-controls-play-button {
+     display: none !important;
+}
