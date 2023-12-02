@@ -19,7 +19,7 @@
                                    <div class="col-md-10">
                                         <div class="card-body">
                                              <div class="d-flex">
-                                                  <div class="">
+                                                  <div class=" text-1">
                                                        <p class="m-0 p-1 fw-semibold">José E.</p>
                                                        <p class="m-0">
                                                             <span class="p-1">
@@ -36,13 +36,13 @@
                                                             <span class="p-1 text-small">Parle : Espagnol (Natif), Anglais</span>
                                                        </p>
                                                   </div>
-                                                  <div class="d-flex">
+                                                  <div class="d-flex text-1">
                                                        <div class="p-1">
-                                                            <h5 class="fw-semibold">Nouveau</h5>
+                                                            <h5 class="fw-semibold text-1">Nouveau</h5>
                                                             <p class="text-small">profil</p>
                                                        </div>
                                                        <div class="p-1">
-                                                            <h5 class="fw-semibold">{{ 12027 | currency: 'XAF' }}</h5>
+                                                            <h5 class="fw-semibold text-1">{{ 12027 | currency: 'XAF' }}</h5>
                                                             <p class="text-small">cours de 50 min</p>
                                                        </div>
                                                   </div>
@@ -54,9 +54,9 @@
                     </div>
                </div>
                <div class="">
-                    <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-5">
+                    <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 z-2 mb-5 ">
                          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                         <ul class="nav nav-pills">
+                         <ul class="nav nav-pills ">
                               <li class="nav-item">
                                    <a class="nav-link" href="detail-teacher/#scrollspyHeading1">Presentation</a>
                               </li>
@@ -89,7 +89,7 @@
                          <div class=" ">
                               <h3 id="scrollspyHeading1">Presentation</h3>
 
-                              <div class="mb-5">
+                              <div class="mb-5 text-1">
                                    <p>
                                         Bonjour 🙋, comment vas-tu ? Je m'appelle Allyson de Lima - Pérou et je devrais être votre professeur
                                         d'espagnol car ces dernières années, mon travail n'est pas seulement d'enseigner l'espagnol, c'est-à-dire que
@@ -116,13 +116,13 @@
                          <!-- agenda? -->
                          <div class="mg-p">
                               <h3 id="scrollspyHeading2">Agenda</h3>
-                              <app-agenda></app-agenda>
+                              <app-agenda2></app-agenda2>
                          </div>
 
                          <!-- cv -->
                          <div class="mg-p">
                               <h3 id="scrollspyHeading3">CV</h3>
-                              <div class="">
+                              <div class=" text-1">
                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
                                         <li class="nav-item" role="presentation">
                                              <button
@@ -196,7 +196,7 @@
                          <!-- Specialisations -->
                          <div class="mg-p">
                               <h3 id="scrollspyHeading4">Specialisations</h3>
-                              <div class="p-2">
+                              <div class="p-2 text-1">
                                    <p class="fw-semibold">Espagnol conversationnel</p>
                                    <p>
                                         He trabajado durante 8 años como profesora de español a extranjeros cuyo objetivo era la mejora de su fluidez
@@ -235,49 +235,58 @@
                          <!-- messages? -->
                          <div class="mg-p">
                               <h4 id="scrollspyHeading6">Messages</h4>
-                              <p>...</p>
+                              <div class="p-2 mt-4 mg-p">
+                                   
+                                   <app-sms></app-sms>
+                                   <app-sms></app-sms>
+                                   <app-sms></app-sms>
+                                   <app-sms></app-sms>
+                                   <app-sms></app-sms>
+
+
+                              </div>
                          </div>
 
-                         <div class="container bd py-5">
-                              <div class="row align-items-center">
+                         <div class="container mg-p bd py-5">
+                              <div class="row  align-items-center">
                                    <div class="col-lg-5 mb-5 mb-lg-0 b3">
                                         <div class="d-flex flex-column justify-content-center px-5 p-3">
                                              <div class="d-flex align-items-center mb-5">
                                                   <div class="bd p-2 bg-primary blocksms d-flex justify-content-center align-items-center">
-                                                       <i class="fa fa-2x fa-map-marker-alt text-white" style="font-size: 2.5rem"></i>
+                                                       <i class="fa fa-2x fa-map-marker-alt text-white" style="font-size: 1rem"></i>
                                                   </div>
-                                                  <div class="mt-n1">
-                                                       <h4>Our Location</h4>
-                                                       <p class="m-0">123 Street, New York, USA</p>
+                                                  <div class="mt-n1 ms-2">
+                                                       <h4 class="text-1"> Our Location</h4>
+                                                       <p class="m-0 text-1">123 Street, New York, USA</p>
                                                   </div>
                                              </div>
                                              <div class="d-flex align-items-center mb-5">
                                                   <div class="p-2 bg-secondary blocksms d-flex justify-content-center align-items-center">
-                                                       <i class="fa fa-2x fa-phone-alt" style="font-size: 2.5rem"></i>
+                                                       <i class="fa fa-2x fa-phone-alt" style="font-size: 1rem"></i>
                                                   </div>
-                                                  <div class="mt-n1">
-                                                       <h4>Call Us</h4>
-                                                       <p class="m-0">+012 345 6789</p>
+                                                  <div class="mt-n1 ms-2">
+                                                       <h4 class="text-1">Call Us</h4>
+                                                       <p class="m-0 text-1">+012 345 6789</p>
                                                   </div>
                                              </div>
                                              <div class="d-flex align-items-center">
-                                                  <div class="p-2 bg-primary blocksms d-flex justify-content-center align-items-center">
-                                                       <i class="fa fa-2x fa-envelope text-white" style="font-size: 2.5rem"></i>
+                                                  <div class=" bg-primary blocksms d-flex justify-content-center align-items-center">
+                                                       <i class="fa fa-2x fa-envelope text-white" style="font-size: 1rem"></i>
                                                   </div>
-                                                  <div class="mt-n1">
-                                                       <h4>Email Us</h4>
-                                                       <p class="m-0">info@example.com</p>
+                                                  <div class="mt-n1 ms-2">
+                                                       <h4 class="text-1">Email Us</h4>
+                                                       <p class="m-0 text-1">info@example.com</p>
                                                   </div>
                                              </div>
                                         </div>
                                    </div>
                                    <div class="col-lg-7 bg-body-tertiary">
                                         <div class="section-title position-relative mb-4">
-                                             <h6 class="d-inline-block position-relative text-success text-uppercase pb-2">Need Help?</h6>
-                                             <h2 class="display-4 fw-semibold">Send Us A Message</h2>
+                                             <h6 class="d-inline-block position-relative text-success text-uppercase text-1 pb-2">Need Help?</h6>
+                                             <h2 class="display-4 fw-semibold text-2">Send Us A Message</h2>
                                         </div>
                                         <div class="contact-form bd p-1">
-                                             <form>
+                                             <form class="text-1">
                                                   <div class="row p-1">
                                                        <div class="col-6 form-group">
                                                             <input
@@ -313,7 +322,7 @@
                                                        ></textarea>
                                                   </div>
                                                   <div class="p-1">
-                                                       <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                                                       <button class="btn btn-primary text-1" type="submit">Send Message</button>
                                                   </div>
                                              </form>
                                         </div>
@@ -325,11 +334,11 @@
           </div>
          
           <div  class="col-lg-4 d-none d-lg-block p-1 bd">
-               <div class="bd position-fixed bd p-1 m-0" style="width: 400px">
+               <div class="bd sticky-top z-5 bd p-1 m-0">
                     <div class="card">
                          <div class="video-container p-1">
                               <video
-                                   class="rounded-2"
+                                   class="rounded-2 text-1"
                                    controls
                                    (mouseenter)="showControls()"
                                    (mouseleave)="hideControls()"
@@ -358,7 +367,7 @@
                               </button>
                          </div>
                          <div class="d-flex justify-content-between p-2">
-                              <div class="">
+                              <div class="text-1">
                                    <p class="fw-semibold m-0">New</p>
                                    <p>tutor</p>
                               </div>
@@ -368,13 +377,13 @@
                               </div>
                          </div>
                          <div class="p-2">
-                              <button class="btn btn-primary w-100">Book trial lesson</button>
+                              <button class="btn btn-primary w-100 text-1">Book trial lesson</button>
                          </div>
                          <div class="p-2">
-                              <button class="btn btn-outline-primary w-100">Send message</button>
+                              <button class="btn btn-outline-primary text-1 w-100">Send message</button>
                          </div>
                          <div class="p-2">
-                              <button class="btn btn-outline-primary w-100">Save to my list</button>
+                              <button class="btn btn-outline-primary text-1 w-100">Save to my list</button>
                          </div>
                     </div>
                </div>
@@ -383,4 +392,3 @@
      <div class="mg-p"></div>
 </div>
 
-<div class="bd" style="height: 600px;width: 300px;"></div>

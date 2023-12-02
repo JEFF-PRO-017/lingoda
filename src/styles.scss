@@ -2,20 +2,28 @@
 
 @import '../node_modules/bootstrap/scss/functions';
 @import '../node_modules/bootstrap/scss/variables';
-@import "primeicons/primeicons.css";
 @import '../src/assets/theme/color.scss';
+
 
 //$body-bg: #000;
 //$body-color: #111;
 
+$color1: $color1;
+$color2: $color2;
+$color3: $color3;
 
-$color1:$color1;
-$color2:$color2;
-$color3:$color3;
-
+.text-1 {
+     font-size: 15px !important;
+}
+.text-2 {
+     font-size: 25px !important;
+}
+.text-3 {
+     font-size: 30px !important;
+}
 
 .bd {
-    // border: solid 2px blue !important;
+     // border: solid 2px blue !important;
 }
 
 $blue: #226bac;

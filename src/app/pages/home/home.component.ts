@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EventItem } from '../models/iEventIten-interfaces';
+import { CityPrimeng } from 'src/app/interfaces/interfaces';
 
 @Component({
      selector: 'app-home',
@@ -13,8 +14,19 @@ export class HomeComponent implements OnInit {
      products: any[] = [1, 1, 1, 1, 1];
      value: number = 3;
 
-     constructor() {}
+     cities!: CityPrimeng[];
+
+     selectedCities!: CityPrimeng[];
+     
      ngOnInit() {
+
+          this.cities = [
+               {name: 'New York', code: 'NY'},
+               {name: 'Rome', code: 'RM'},
+               {name: 'London', code: 'LDN'},
+               {name: 'Istanbul', code: 'IST'},
+               {name: 'Paris', code: 'PRS'}
+           ];
           this.events = [
                { status: 'Flexible Scheduling', icon: 'fa-solid fa-calendar-days', text: 'Book and attend classes on your schedule' },
                { status: 'Pay as you go', icon: 'fa-solid fa-comments-dollar', text: 'No contracts - buy lessons only' },
@@ -39,11 +51,4 @@ export class HomeComponent implements OnInit {
                },
           ];
      }
-
-     // countries = [
-     //      { name: 'Country 1', flag: 'assets/img/team-1.jpg' },
-     //      { name: 'Country 2', flag: 'assets/img/team-1.jpg' },
-     //      { name: 'Country 3', flag: 'flag3.jpg' },
-     //      // Add more countries as needed
-     //    ];
 }
