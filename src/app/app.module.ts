@@ -24,10 +24,18 @@ import { TagModule } from 'primeng/tag';
 import { ButtonModule } from 'primeng/button';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { RatingModule } from 'primeng/rating';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DetailTeacherComponent } from './pages/detail-teacher/detail-teacher.component';
 import { AgendaComponent } from './components/agenda/agenda.component';
 import { AllTeacherComponent } from './pages/all-teacher/all-teacher.component';
+import { ItemTeachersComponent } from './components/item-teachers/item-teachers.component';
+import { ChartModule } from 'primeng/chart';
+import { ItemCvComponent } from './components/item-cv/item-cv.component';
+import { Agenda2Component } from './components/agenda2/agenda2.component';
+import { HeaderFilterComponent } from './components/header-filter/header-filter.component';
+import { MultiSelectModule } from 'primeng/multiselect';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SmsComponent } from './components/sms/sms.component';
 
 @NgModule({
      declarations: [
@@ -49,8 +57,14 @@ import { AllTeacherComponent } from './pages/all-teacher/all-teacher.component';
           DetailTeacherComponent,
           AgendaComponent,
           AllTeacherComponent,
+          ItemTeachersComponent,
+          ItemCvComponent,
+          Agenda2Component,
+          HeaderFilterComponent,
+          SmsComponent,
      ],
      imports: [
+          ReactiveFormsModule,
           BrowserModule,
           AppRoutingModule,
           TimelineModule,
@@ -60,7 +74,10 @@ import { AllTeacherComponent } from './pages/all-teacher/all-teacher.component';
           ButtonModule,
           SlickCarouselModule,
           RatingModule,
-          FormsModule
+          FormsModule,
+          ChartModule,
+          MultiSelectModule,
+          BrowserAnimationsModule,
      ],
      providers: [],
      bootstrap: [AppComponent],
