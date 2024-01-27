@@ -1,0 +1,50 @@
+<div class="bg-light">
+     <div class="container-fluid">
+          <div class="row flex-row-reverse p-4 mb-2">
+               <div class="col-sm-12 col-lg-6 m1">
+                    <img src="/assets/img/img-home/header.svg" class="w-100 h-100" title="image header" />
+               </div>
+               <div class="col-sm-12 col-lg-6 m2 d-flex justify-content-lg-center">
+                    <div class="col-lg-6 d-flex align-items-center">
+                         <div class="">
+                              <div class="po-header d-none d-lg-block m2">
+                                   <span>Become fluent and speak confidently in English or any language</span>
+                              </div>
+                              <div class="po-header-android text-center d-lg-none m2">
+                                   <span>Become fluent and speak confidently in English or any language</span>
+                              </div>
+
+                              <div class="po-body text-center m2">
+                                   <span>Explore 24/7 live online classes. Learn in small groups or 1-on-1. Enjoy a free 7-day trial</span>
+                              </div>
+
+                              <div class="po-body m2 row d-flex">
+                                   <div class="dropdown p-1 col-lg-6">
+                                        <button
+                                             class="btn w-100 btn-primary dropdown-toggle text-white po-body"
+                                             role="button"
+                                             data-bs-toggle="dropdown"
+                                             aria-expanded="false"
+                                        >
+                                             language
+                                        </button>
+
+                                        <ul class="dropdown-menu">
+                                             <li *ngFor="let i of images">
+                                                  <a href="#" class="m-2 btn btn-outline-secondary">
+                                                       <i class="flag-icon flag-icon-{{ i.code.toLowerCase() }}"></i>
+                                                       {{ i.lang }}
+                                                       {{ i.number }}
+                                                  </a>
+                                             </li>
+                                        </ul>
+                                   </div>
+
+                                   <div class="p-1 col-lg-6"><button class="btn w-100 btn-outline-secondary po-body">get Started</button></div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+</div>

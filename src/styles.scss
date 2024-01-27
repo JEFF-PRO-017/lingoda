@@ -3,28 +3,55 @@
 @import '../node_modules/bootstrap/scss/functions';
 @import '../node_modules/bootstrap/scss/variables';
 @import '../src/assets/theme/color.scss';
-
-
-//$body-bg: #000;
-//$body-color: #111;
+@import '../node_modules//flag-icon-css/css/flag-icons.css';
 
 $color1: $color1;
 $color2: $color2;
 $color3: $color3;
 
-.text-1 {
-     font-size: 15px !important;
+.po-header {
+     font-size: 64px !important;
+     font-family: 'Bebas Neue' !important;
+     text-transform: uppercase;
+     font-weight: bold;
+     line-height: 1;
 }
-.text-2 {
-     font-size: 22.5px !important;
+
+.po-header-android {
+     font-size: 48px !important;
+     font-family: Bebas Neue, 'Source Sans Pro' !important;
+     text-transform: uppercase;
+     font-weight: bold;
+     line-height: 1;
 }
-.text-3 {
-     font-size: 30px !important;
+.po-title {
+     font-size: 32px !important;
+     font-family: Montserrat;
+     font-weight: bold;
+     text-transform: uppercase;
+}
+.po-body {
+     font-size: 24px !important;
+     font-family: Montserrat;
+     text-transform: capitalize;
 }
 
 .bd {
-     // border: solid 2px blue !important;
+     border: solid 2px blue !important;
 }
+
+.m1 {
+     margin-bottom: 100px;
+}
+
+.m2 {
+     margin-bottom: 50px;
+}
+
+.mt2{
+     margin-top: 50px;  
+}
+
 
 $blue: #226bac;
 $indigo: #6610f2 !default;
@@ -40,7 +67,8 @@ $light: #ffffff;
 
 $primary: $color1;
 $purple: $color2;
-$success: $color3;
+// $success: $color3;
+$light: $color3;
 // $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;

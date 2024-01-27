@@ -7,6 +7,7 @@ import { Component, ElementRef, HostListener, Renderer2 } from '@angular/core';
 })
 export class DetailTeacherComponent {
      ishidden: boolean = true;
+     GMT: number = 10;
 
      onIsHidden() {
           this.ishidden ? (this.ishidden = false) : (this.ishidden = true);
@@ -19,8 +20,10 @@ export class DetailTeacherComponent {
      basicData: any;
 
      basicOptions: any;
-     constructor(private el: ElementRef, private renderer: Renderer2) { }
-
+     constructor(
+          private el: ElementRef,
+          private renderer: Renderer2,
+     ) {}
 
      ngOnInit() {
           const documentStyle = getComputedStyle(document.documentElement);
@@ -29,11 +32,11 @@ export class DetailTeacherComponent {
           const surfaceBorder = documentStyle.getPropertyValue('--surface-border');
 
           this.basicData = {
-               labels: ['1', '2', '3', '4','5'],
+               labels: ['1', '2', '3', '4', '5'],
                datasets: [
                     {
                          label: 'Sales',
-                         data: [2, 14, 45, 40,15],
+                         data: [2, 14, 45, 40, 15],
                          backgroundColor: [
                               'rgba(255, 159, 64, 0.2)',
                               'rgba(75, 192, 192, 0.2)',
@@ -80,15 +83,15 @@ export class DetailTeacherComponent {
 
      @HostListener('window:scroll', ['$event'])
      onWindowScroll(event: Event) {
-       const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-       const targetElement = this.el.nativeElement.querySelector('#navbar-example2');
-   
-       // Modifiez la condition selon votre besoin
-       if (scrollPosition > 300) {
-         this.renderer.addClass(targetElement, 'fixed-top');
-       } else {
-         this.renderer.removeClass(targetElement, 'fixed-top');
-       }
+          const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+          const targetElement = this.el.nativeElement.querySelector('#navbar-example2');
+
+          // Modifiez la condition selon votre besoin
+          if (scrollPosition > 300) {
+               this.renderer.addClass(targetElement, 'fixed-top');
+          } else {
+               this.renderer.removeClass(targetElement, 'fixed-top');
+          }
      }
 
      playVideo() {

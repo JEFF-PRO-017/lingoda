@@ -1,67 +1,120 @@
-<header class="fixed-top z-1" [ngClass]="{ 'bg-primary': isScrolled }">
-    <nav class="navbar navbar-expand-lg">
-         <div class="container-fluid">
-              <a class="navbar-brand aa-logo" routerLink="">
-                   <img src="assets/icon/logo.png" alt="Logo" />
-              </a>
-              <button
-                   class="navbar-toggler"
-                   type="button"
-                   data-bs-toggle="collapse"
-                   data-bs-target="#navbarSupportedContent"
-                   aria-controls="navbarSupportedContent"
-                   aria-expanded="false"
-                   aria-label="Toggle navigation"
-              >
-                   <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item me-4">
-                             <a class="nav-link text-secondary" aria-current="page" routerLinkActive="active" routerLink="subjects">
-                                  <i class="fas fa-bars"></i>
-                                  Select Subject
-                             </a>
-                        </li>
-                        <li class="nav-item me-4 text-white">
-                             <a class="nav-link text-secondary" routerLinkActive="active" routerLink="/all-teacher">Find a Teacher</a>
-                        </li>
-                        <li class="nav-item me-4 text-white">
-                             <a class="nav-link text-secondary" routerLinkActive="active" routerLink="classes">Join Group Classes</a>
-                        </li>
-                        <li class="nav-item dropdown me-4">
-                             <a
-                                  routerLinkActive="active"
-                                  class="nav-link dropdown-toggle text-secondary"
-                                  href="#"
-                                  id="navbarDropdown"
-                                  role="button"
-                                  data-bs-toggle="dropdown"
-                                  aria-expanded="false"
-                             >
-                                  <i class="fas fa-globe"></i>
-                                  Currency
-                             </a>
-                             <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
-                                  <li><a class="dropdown-item text-primary" href="#">Action</a></li>
-                                  <li><a class="dropdown-item text-primary" href="#">Another action</a></li>
-                                  <li><hr class="dropdown-divider text-primary" /></li>
-                                  <li><a class="dropdown-item text-primary" href="#">Something else here</a></li>
-                             </ul>
-                        </li>
-                   </ul>
+<header class="bg-light">
+     <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+               <a class="navbar-brand aa-logo" routerLink="">
+                    <img src="assets/icon/logo.svg" alt="Logo" />
+               </a>
 
-                   <div class="justify-content-finish">
-                        <button class="btn btn-outline-secondary me-2" type="button" routerLink="login">
-                             <i class="fas fa-sign-in"></i>
-                             Log In
-                        </button>
-                        <button class="btn btn-primary" type="button" routerLink="register">
-                             <i class="fas fa-user-plus"></i>
-                             Sign Up
-                        </button>
-                   </div>
-              </div>
-         </div>
-    </nav>
+               <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample"
+               >
+                    <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                         <li class="nav-item me-4">
+                              <a class="nav-link po-body" routerLinkActive="active" routerLink="/all-teacher">Find a Teacher</a>
+                         </li>
+                         <li class="nav-item me-4">
+                              <a class="nav-link po-body" routerLinkActive="active" routerLink="classes">Join Group Classes</a>
+                         </li>
+
+                         <li class="nav-item me-4">
+                              <a class="nav-link po-body" routerLinkActive="active" routerLink="classes">become a tutor</a>
+                         </li>
+                    </ul>
+
+                    <div class="justify-content-finish d-flex align-items-center">
+                         <div class="nav-item dropdown me-2">
+                              <a
+                                   routerLinkActive="active"
+                                   class="nav-link"
+                                   href="#"
+                                   id="navbarDropdown"
+                                   role="button"
+                                   data-bs-toggle="dropdown"
+                                   aria-expanded="false"
+                              >
+                                   <i class="fa-solid fa-language fa-xl"></i>
+                              </a>
+                              <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
+                                   <li>
+                                        <a class="dropdown-item po-body" href="#">
+                                             <i class="flag-icon flag-icon-fr"></i>
+                                             francais
+                                        </a>
+                                   </li>
+                                   <li>
+                                        <a class="dropdown-item po-body" href="#">
+                                             <i class="flag-icon flag-icon-gb"></i>
+                                             Anglais
+                                        </a>
+                                   </li>
+                              </ul>
+                         </div>
+                         <button class="btn po-body me-2" type="button" routerLink="login">Log In</button>
+                         <button class="btn btn-primary po-body text-white" type="button" routerLink="register">REGISTER</button>
+                    </div>
+               </div>
+          </div>
+     </nav>
 </header>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+     <div class="offcanvas-header">
+          <a class="navbar-brand aa-logo" routerLink="/">
+               <img src="assets/icon/logo.svg" alt="Logo" />
+          </a>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+     </div>
+     <div class="offcanvas-body">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item me-4">
+                    <a class="nav-link po-body" routerLinkActive="active" routerLink="/all-teacher">Find a Teacher</a>
+               </li>
+               <li class="nav-item me-4">
+                    <a class="nav-link po-body" routerLinkActive="active" routerLink="classes">Join Group Classes</a>
+               </li>
+
+               <li class="nav-item me-4">
+                    <a class="nav-link po-body" routerLinkActive="active" routerLink="classes">become a tutor</a>
+               </li>
+          </ul>
+
+          <div class="justify-content-finish d-flex align-items-center">
+               <div class="nav-item dropdown me-2">
+                    <a
+                         routerLinkActive="active"
+                         class="nav-link"
+                         href="#"
+                         id="navbarDropdown"
+                         role="button"
+                         data-bs-toggle="dropdown"
+                         aria-expanded="false"
+                    >
+                         <i class="fa-solid fa-language fa-xl"></i>
+                    </a>
+                    <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
+                         <li>
+                              <a class="dropdown-item po-body" href="#">
+                                   <i class="flag-icon flag-icon-fr"></i>
+                                   francais
+                              </a>
+                         </li>
+                         <li>
+                              <a class="dropdown-item po-body" href="#">
+                                   <i class="flag-icon flag-icon-gb"></i>
+                                   Anglais
+                              </a>
+                         </li>
+                    </ul>
+               </div>
+               <button class="btn po-body me-2" type="button" routerLink="login">Log In</button>
+               <button class="btn btn-primary po-body text-white" type="button" routerLink="register">REGISTER</button>
+          </div>
+     </div>
+</div>

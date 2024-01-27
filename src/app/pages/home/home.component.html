@@ -1,293 +1,31 @@
-<!-- Header Start -->
-<div class="p-0">
-     <div class="header-carousel position-relative">
-          <div class="position-relative">
-               <img class="img-fluid" src="assets/img/carousel-3.jpg" class="w-100" alt="" />
-               <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center b1">
-                    <div class="container">
-                         <div class="row justify-content-start">
-                              <div class="col-sm-10 col-lg-8">
-                                   <h5 class="text-primary fw-semibold mb-3 text-2">Best Online Courses</h5>
-                                   <h1 class="text-white d-none d-md-block text-3">Learn to speak a language with confidence</h1>
-                                   <p class="text-1 text-white mb-4 pb-2">
-                                        Live classes online 24/7 , Learn in small groups or one-on-one , 7-day free trial
-                                   </p>
-
-                                   <p-multiSelect
-                                        [options]="cities"
-                                        [(ngModel)]="selectedCities"
-                                        placeholder="language"
-                                        optionLabel="name"
-                                        display="chip"
-                                        [showClear]="false"
-                                        [class]="'text-1'"
-                                   ></p-multiSelect>
-                                   <a href="" class="btn btn-primary animated slideInRight ms-2 text-2">Get Started</a>
-                              </div>
-                         </div>
-                    </div>
-               </div>
-          </div>
-     </div>
+<div class="m2">
+     <app-header-home></app-header-home>
 </div>
 
-<!-- 
-     carousel
- -->
-<div class="mb-5 mt-4">
-     <app-main-carousel class="d-flex"></app-main-carousel>
+<div class="m1">
+     <app-main-langue-carousel></app-main-langue-carousel>
 </div>
 
-<!--  -->
-
-<!-- 
-     ed carusel
-  -->
-<!-- service start -->
-
-<div class="container mb-5">
-     <div class="text-center p-4">
-          <h2 class="card-title p-1 text-primary text-3">Langoli Services</h2>
-     </div>
-     <div class="row text-center">
-          <div class="col-lg-4 col-sm-6 col-md-6 p-2">
-               <div class="card border-0 b2 rounded-5" style="min-height: 600px">
-                    <img src="assets/img/team-3.jpg" class="card-img-top rounded-5" alt="..." />
-                    <div class="card-body">
-                         <h5 class="card-title fw-semibold text-2">Individual lessons</h5>
-                         <p class="card-text text-1">Find teachers from all over the world, sharing their languages. dialects and cultures</p>
-                    </div>
-
-                    <div class="card-body text-center">
-                         <button class="btn btn-outline-primary text-1">Find my teacher</button>
-                    </div>
-               </div>
-          </div>
-
-          <div class="col-lg-4 col-sm-6 col-md-6 p-2">
-               <div class="card border-0 b2 rounded-5" style="min-height: 600px">
-                    <img src="assets/img/team-3.jpg" class="card-img-top rounded-5" alt="..." />
-                    <div class="card-body">
-                         <h5 class="card-title fw-semibold text-2">Train for free</h5>
-                         <p class="card-text text-1">Meet and share experiences with millions of language learners from over 190 countries</p>
-                    </div>
-
-                    <div class="card-body text-center">
-                         <button class="btn btn-outline-primary text-1">Explore the community</button>
-                    </div>
-               </div>
-          </div>
-
-          <div class="col-lg-4 col-sm-12 col-md-12 p-2">
-               <div class="card border-0 b2 rounded-5">
-                    <img src="assets/img/team-4.jpg" class="card-img-top rounded-5" alt="..." />
-                    <div class="card-body">
-                         <h5 class="card-title fw-semibold text-2">Group lessons</h5>
-                         <p class="card-text text-1">Fun and engaging online group classes designed and led by expert teachers</p>
-                    </div>
-
-                    <div class="card-body text-center">
-                         <button class="btn btn-outline-primary text-1">See all courses</button>
-                    </div>
-               </div>
-          </div>
-     </div>
-</div>
-<!-- service end -->
-
-<!-- What is Langoli? -->
-<div class="container">
-     <div class="mb-5 d-flex align-items-center">
-          <div class="mb-3 mt-5">
-               <div class="row g-0">
-                    <div class="col-lg-5">
-                         <img src="assets/img/cat-4.jpg" class="img-fluid w-100" alt="..." />
-                    </div>
-                    <div class="col-lg-7">
-                         <div class="card-body p-5">
-                              <h2 class="card-title p-1 text-primary fw-semibold text-2">What is Langoli?</h2>
-                              <p class="card-text text-1">
-                                   An online platform that offers a complete range of
-                                   <code class="fw-semibold">personalized courses</code>
-                                   , accessible
-                                   <code class="fw-semibold">live and online</code>
-                                   . Whether you prefer dynamic group lessons or more targeted private lessons, our platform
-                                   <code class="fw-semibold">adapts to your needs</code>
-                                   . Regardless of your current level, whether you are a beginner looking for solid foundations or advanced looking
-                                   for more complex challenges, our courses are designed to support you in your progress.
-                              </p>
-                         </div>
-                         <div class="p-5">
-                              <a href="" class="btn btn-outline-primary text-1">Get Started</a>
-                         </div>
-                    </div>
-               </div>
-          </div>
-     </div>
+<div class="m1">
+     <app-numbers-story></app-numbers-story>
 </div>
 
-<!-- Top Rated English Teachers -->
-<div class="container mb-5 d-flex align-items-center flex-column">
-     <div class="text-center p-3 mb-4">
-          <h1 class="text-primary fw-semibold text-3">Top Rated English Teachers</h1>
-          <p class="text-1">Some of our top-rated English teachers</p>
-     </div>
-     <div class="row">
-          <div class="p-1 col-sm-12 col-lg-3 col-md-6" *ngFor="let teach of [1, 1, 1, 1]">
-               <div class="card b2">
-                    <img src="assets/img/team-1.jpg" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                         <h5 class="card-title text-2">Joshua Carlos</h5>
-                         <p class="card-text text-1">
-                              Some quick example text to build on the card title and make up the bulk of the card's content.
-                         </p>
-
-                         <div class="flex justify-content-center text-1">
-                              <p-rating [(ngModel)]="value" [cancel]="false"></p-rating>
-                         </div>
-                    </div>
-                    <ul class="list-group list-group-flush text-1">
-                         <li class="list-group-item">language that I teach</li>
-                         <li class="list-group-item">language I know: English-mother tongue, Spanish B1</li>
-                         <li class="list-group-item">Location:YAOUNDE I teach:Private lessons</li>
-                    </ul>
-                    <div class="card-body">
-                         <a class="btn btn-outline-primary text-1" routerLink="/detail-teacher">View Details</a>
-                    </div>
-               </div>
-          </div>
-     </div>
-
-     <div class="text-center mt-3">
-          <a class="btn btn-primary text-1" style="min-width: 300px" routerLink="/all-teacher">show more</a>
-     </div>
+<div class="m1">
+     <!-- <app-top-rated></app-top-rated> -->
 </div>
 
-<!-- Top rated French teachers -->
-<div class="container mb-5 d-flex align-items-center flex-column">
-     <div class="text-center p-3 mb-4">
-          <h1 class="text-primary fw-semibold text-2">Top rated French teachers</h1>
-          <p class="text-1">Some of our top-rated French teachers</p>
-     </div>
-
-     <div class="row">
-          <div class="p-1 col-sm-12 col-lg-3 col-md-6" *ngFor="let teach of [1, 1, 1, 1]">
-               <div class="card b2">
-                    <img src="assets/img/team-4.jpg" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                         <h5 class="card-title text-2">Joshua Carlos</h5>
-                         <p class="card-text text-1">
-                              Some quick example text to build on the card title and make up the bulk of the card's content.
-                         </p>
-
-                         <div class="flex justify-content-center text-1">
-                              <p-rating [(ngModel)]="value" [cancel]="false"></p-rating>
-                         </div>
-                    </div>
-                    <ul class="list-group list-group-flush text-1">
-                         <li class="list-group-item">language that I teach</li>
-                         <li class="list-group-item">language I know: English-mother tongue, Spanish B1</li>
-                         <li class="list-group-item">Location:YAOUNDE I teach:Private lessons</li>
-                    </ul>
-                    <div class="card-body">
-                         <a class="btn btn-outline-primary text-1" routerLink="/detail-teacher">View Details</a>
-                    </div>
-               </div>
-          </div>
-     </div>
-
-     <div class="text-center mt-3">
-          <a class="btn btn-primary text-1" style="min-width: 300px" routerLink="/all-teacher">show more</a>
-     </div>
+<div class="m1">
+     <app-become-teacher></app-become-teacher>
 </div>
 
-<!-- Reasons to learn about Langoli -->
-<div class="bg-reasons-learn">
-     <div class="container mb-5">
-          <!-- <div class="bd"></div> -->
-          <div class="d-flex justify-content-center w-100 p-3 mb-4 text-secondary position-absolute bd top-0 start-50 translate-middle-x mt-3">
-               <div class="col-sm-12 col-md-6 text-center col-lg-8 bd">
-                    <h1 class="fw-semibold text-3">Reasons to learn about Langoli</h1>
-                    <p class="text-1">
-                         Langoli has many advantages, such as the flexibility to study at your own pace, easy access to courses from any
-                         internet-connected device, and the ability to choose from a wide range of learning programs to develop your skills. skills
-                         and knowledges
-                    </p>
-               </div>
-          </div>
-
-          <div class="" style="margin-top: 200px">
-               <p-timeline [value]="events" [align]="'alternate'" styleClass="customized-timeline">
-                    <ng-template pTemplate="marker" let-event>
-                         <span class="custom-marker shadow-2" [style.backgroundColor]="event.color">
-                              <i [ngClass]="event.icon"></i>
-                         </span>
-                    </ng-template>
-                    <ng-template pTemplate="content" let-event>
-                         <p-card [header]="event.status">
-                              <i [class]="event.icon + ' fa-4x  text-success mb-4 '"></i>
-                              <p class="text-1">
-                                   {{ event.text }}
-                              </p>
-                              <button label="Read more" class="btn btn-outline-success text-1">Start Finding tutors</button>
-                         </p-card>
-                    </ng-template>
-               </p-timeline>
-          </div>
-     </div>
-</div>
-<!-- What our students say -->
-<div class="container bd">
-     <div class="bd w-100" style="height: 2000px"></div>
-
-     <div class="text-center bd">
-          <h1 class="text-primary fw-semibold text-2">What our students say</h1>
-          <p class="text-1">Hear the winners of our students' favorite language</p>
-     </div>
-     <div class="">
-          <p-carousel [value]="products" [numVisible]="4" [numScroll]="3" [responsiveOptions]="responsiveOptions">
-               <ng-template let-product pTemplate="item">
-                    <!-- testimonial slider -->
-                    <ul class="">
-                         <li class="text-center d-flex justify-content-center">
-                              <div class="card b2 rounded-4" style="width: 20rem">
-                                   <img src="assets/img/testimonial-2.jpg" class="card-img-top rounded-4" alt="testimonial" />
-                                   <div class="card-body">
-                                        <h5 class="card-title fw-semibold text-1">David Muller</h5>
-                                        <p class="card-text m-0 text-1">Camerounaise</p>
-                                        <a href="#" class="btn btn-primary text-1 w-100">view</a>
-                                   </div>
-                              </div>
-                         </li>
-                    </ul>
-               </ng-template>
-          </p-carousel>
-     </div>
+<div class="m1">
+     <app-reasons-learn></app-reasons-learn>
 </div>
 
-<div class="bg-reasons-lear">
-     <div class="container mb-5 vh-100 d-flex align-items-center">
-          <div class="w-100 rounded-0">
-               <div class="row">
-                    <div class="col-lg-7">
-                         <div class="card-body p-5">
-                              <h2 class="card-title text-2 p-1 text-primary fw-semibold">Interested in becoming a teacher with an amazing talker</h2>
-                              <div class="ms-3">
-                                   <p class="card-text text-1"><small class="text-body-secondary">Higher income with more freedom</small></p>
-                                   <div class="ms-3 mb-3 text-1">
-                                        <p class="card-text">set your own prices</p>
-                                        <p class="card-text">Be your own boss</p>
-                                        <p class="card-text">Work from home , and on your schedule</p>
-                                   </div>
-                                   <p><button class="btn btn-outline-danger rounded-0 text-1">Apply to teach</button></p>
-                              </div>
-                         </div>
-                    </div>
+<div class="m1">
+     <app-our-students></app-our-students>
+</div>
 
-                    <div class="col-lg-5">
-                         <img src="assets/img/cat-2.jpg" class="img-fluid w-100 h-100" alt="..." />
-                    </div>
-               </div>
-          </div>
-     </div>
+<div class="">
+     <app-footer></app-footer>
 </div>

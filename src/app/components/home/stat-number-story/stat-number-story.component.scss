@@ -1,0 +1,42 @@
+.main-container {
+    position: relative;
+    width: 235.274px;
+    height: 275px;
+    margin: 0 auto;
+}
+.image {
+    position: relative;
+    width: 202.652px;
+    height: 196px;
+    margin: 0 0 0 16.805px;
+    background-size: cover;
+}
+.flex-row-d {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 236.274px;
+    height: 70px;
+    margin: 9px 0 0 -1px;
+    z-index: 3;
+}
+.k {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    width: 117px;
+    height: 70px;
+}
+.classes-a-year {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    width: 113.683px;
+    height: 60px;
+   
+}

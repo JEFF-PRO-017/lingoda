@@ -36,6 +36,18 @@ import { HeaderFilterComponent } from './components/header-filter/header-filter.
 import { MultiSelectModule } from 'primeng/multiselect';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SmsComponent } from './components/sms/sms.component';
+import { ImageModule } from 'primeng/image';
+import { HeaderHomeComponent } from './components/home/header-home/header-home.component';
+import { MainLangueCarouselComponent } from './components/home/main-langue-carousel/main-langue-carousel.component';
+import { NumbersStoryComponent } from './components/home/numbers-story/numbers-story.component';
+import { StatNumberStoryComponent } from './components/home/stat-number-story/stat-number-story.component';
+import { TopRatedComponent } from './components/home/top-rated/top-rated.component';
+import { TopRatedTeachersComponent } from './components/home/top-rated-teachers/top-rated-teachers.component';
+import { StatStarComponent } from './components/stat-star/stat-star.component';
+import { BecomeTeacherComponent } from './components/home/become-teacher/become-teacher.component';
+import { ReasonsLearnComponent } from './components/home/reasons-learn/reasons-learn.component';
+import { OurStudentsComponent } from './components/home/our-students/our-students.component';
+import { StudentsComponent } from './components/home/students/students.component';
 
 @NgModule({
      declarations: [
@@ -62,6 +74,17 @@ import { SmsComponent } from './components/sms/sms.component';
           Agenda2Component,
           HeaderFilterComponent,
           SmsComponent,
+          HeaderHomeComponent,
+          MainLangueCarouselComponent,
+          NumbersStoryComponent,
+          StatNumberStoryComponent,
+          TopRatedComponent,
+          TopRatedTeachersComponent,
+          StatStarComponent,
+          BecomeTeacherComponent,
+          ReasonsLearnComponent,
+          OurStudentsComponent,
+          StudentsComponent,
      ],
      imports: [
           ReactiveFormsModule,
@@ -78,6 +101,7 @@ import { SmsComponent } from './components/sms/sms.component';
           ChartModule,
           MultiSelectModule,
           BrowserAnimationsModule,
+          ImageModule,
      ],
      providers: [],
      bootstrap: [AppComponent],
