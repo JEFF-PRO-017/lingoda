@@ -1,15 +1,58 @@
-<div class="bg-dark d-flex align-items-center justify-content-lg-center " style="min-height: 950px;">
+<div class="bg-dark d-flex align-items-center justify-content-lg-center" style="min-height: 950px">
      <div class="container">
           <div class="text-white">
-               <div class="row m-0  d-flex align-items-center">
+               <div class="row m-0 d-flex align-items-center">
                     <div class="col-lg-6 p-1">
                          <div class="text-center po-header m2">What our students say</div>
                          <div class="text-center po-title m2">Hear the winners of our students' favorite language</div>
                     </div>
-                    <div class="col-lg-6  d-flex justify-content-center ">
-                         <app-students></app-students>
+                    <div class="col-lg-6">
+                         <div id="carouselExamplestudents" class="carousel slide " data-bs-ride="carousel">
+                              <div class="carousel-inner">
+                                   <div class="carousel-item active">
+                                        <div class="justify-content-center row">
+                                             <div class="col-lg-5 col-10">
+                                                  <app-students class=""></app-students>
+                                             </div>
+                                             <div class="col-lg-5 col-sm-10 d-lg-block d-none">
+                                                  <app-students class="d-flex"></app-students>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="carousel-item">
+                                        <div class="justify-content-center row">
+                                             <div class="col-lg-5 col-10">
+                                                  <app-students class=""></app-students>
+                                             </div>
+                                             <div class="col-lg-5 col-sm-10 d-lg-block d-none">
+                                                  <app-students class="d-flex"></app-students>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="carousel-item">
+                                        <div class="justify-content-center row">
+                                             <div class="col-lg-5 col-10">
+                                                  <app-students class=""></app-students>
+                                             </div>
+                                             <div class="col-lg-5 col-sm-10 d-lg-block d-none">
+                                                  <app-students class="d-flex"></app-students>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExamplestudents" data-bs-slide="prev">
+                                   <span class="carousel-control-prev-icon bg-primary rounded-circle p-3" aria-hidden="true"></span>
+                                   <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carouselExamplestudents" data-bs-slide="next">
+                                   <span class="carousel-control-next-icon bg-primary rounded-circle p-3" aria-hidden="true"></span>
+                                   <span class="visually-hidden">Next</span>
+                              </button>
+                         </div>
                     </div>
                </div>
           </div>
      </div>
 </div>
+
+<!-- col-lg-6 d-flex justify-content-center -->

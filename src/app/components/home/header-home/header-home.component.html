@@ -29,13 +29,20 @@
                                              language
                                         </button>
 
-                                        <ul class="dropdown-menu">
+                                        <ul class="dropdown-menu" style="min-width: 320px">
                                              <li *ngFor="let i of images">
-                                                  <a href="#" class="m-2 btn btn-outline-secondary">
-                                                       <i class="flag-icon flag-icon-{{ i.code.toLowerCase() }}"></i>
-                                                       {{ i.lang }}
-                                                       {{ i.number }}
-                                                  </a>
+                                                  <div class="p-1">
+                                                       <a
+                                                            href="#"
+                                                            class="btn btn-outline-secondary w-100"
+                                                            routerLinkActive="active"
+                                                            [routerLink]="i.routerLink"
+                                                       >
+                                                            <i class="flag-icon flag-icon-{{ i.code.toLowerCase() }}"></i>
+                                                            {{ i.lang }}
+                                                            {{ i.number }}
+                                                       </a>
+                                                  </div>
                                              </li>
                                         </ul>
                                    </div>

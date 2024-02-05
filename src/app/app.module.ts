@@ -48,6 +48,8 @@ import { BecomeTeacherComponent } from './components/home/become-teacher/become-
 import { ReasonsLearnComponent } from './components/home/reasons-learn/reasons-learn.component';
 import { OurStudentsComponent } from './components/home/our-students/our-students.component';
 import { StudentsComponent } from './components/home/students/students.component';
+import { TopRated2Component } from './components/home/top-rated2/top-rated2.component';
+import { LangueComponent } from './components/home/langue/langue.component';
 
 @NgModule({
      declarations: [
@@ -85,6 +87,8 @@ import { StudentsComponent } from './components/home/students/students.component
           ReasonsLearnComponent,
           OurStudentsComponent,
           StudentsComponent,
+          TopRated2Component,
+          LangueComponent,
      ],
      imports: [
           ReactiveFormsModule,
